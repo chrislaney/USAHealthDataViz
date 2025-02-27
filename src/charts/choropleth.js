@@ -89,6 +89,16 @@ export class ChoroplethMap {
   
       vis.path = d3.geoPath()
         .projection(vis.projection);
+
+      vis.svg.append("text")
+        .attr("class", "map-title")
+        .attr("x", vis.width / 2) // Center the title
+        .attr("y", vis.config.margin.top + 100) // Adjust position
+        .attr("text-anchor", "middle")
+        .style("font-size", "18px")
+        .style("font-family", "Roboto")
+        .style("font-weight", "bold")
+        .text(`County choropleth of ${this.metricLabel}`);
   
       vis.g = vis.svg.append("g")
         .attr('class', 'center-container center-items us-state')

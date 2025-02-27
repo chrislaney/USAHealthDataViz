@@ -74,6 +74,7 @@ export function drawBarChart(containerId, metric, metricLabel) {
             .attr("y", -20)
             .attr("text-anchor", "middle")
             .style("font-size", "16px")
+            .style("font-family", "Roboto")
             .style("font-weight", "bold")
             .text(`${metricLabel} Distribution`);
 

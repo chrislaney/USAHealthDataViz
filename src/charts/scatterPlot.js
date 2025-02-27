@@ -55,6 +55,7 @@ export function drawScatterPlot(containerId, metric, metricLabel) {
         .attr("y", -20)  // Position it a bit above the plot
         .attr("text-anchor", "middle")  // Center text
         .style("font-size", "16px")  // Adjust font size
+        .style("font-family", "Roboto")
         .style("font-weight", "bold")  // Optional: make the title bold
         .text(`Median Income vs ${metricLabel} `);
 
