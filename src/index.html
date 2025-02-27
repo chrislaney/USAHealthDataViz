@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Income's relationship with poor vital health</title>
+    <link rel="stylesheet" href="..\styles\styles.css">
+    
+</head>
+<body>
+    <div id="title">Median Household Income's Relationship With Heart Disease & Stroke</div>
+
+
+
+
+    <div id="container">
+        <div id="choroplethparent">
+
+            <div class="selector"> 
+                <!-- <select id="metricSelector">
+                    <option value="percent_stroke">Percent Stroke</option>
+                    <option value="percent_coronary_heart_disease">Percent Coronary Heart Disease</option>
+                    <option value="percent_high_blood_pressure">Percent High Blood Pressure</option>
+                    <option value="percent_high_cholesterol">Percent High Cholesterol</option>
+                    <option value="median_household_income">Median Household Income</option>
+                </select> -->
+
+                <div id="metricSelector">
+                    <button class="metric-btn" data-value="percent_stroke">Stroke</button>
+                    <button class="metric-btn" data-value="percent_coronary_heart_disease">Coronary Heart Disease</button>
+                    <button class="metric-btn" data-value="percent_high_blood_pressure">High Blood Pressure</button>
+                    <button class="metric-btn" data-value="percent_high_cholesterol">High Cholesterol</button>
+                    <button class="metric-btn" data-value="median_household_income">Median Household Income</button>
+                </div>
+            </div>
+
+
+            <div id="choroplethchart">
+                <div id="choropleth"></div>
+                <div id="tooltip"></div>
+            </div>  
+        </div>
+
+
+
+        <div id="center">
+            <!--SCATTER PLOT BELOW-->
+            <div class="center-section" id="scatterplot">
+                <div id="scatterplotplot"></div>
+            </div>
+
+
+            <!--BAR CHART BELOW-->
+            <div class="center-section" id="barchart">
+                <div id="barchartchart"></div>
+            </div>
+
+        </div>
+
+        <div id="datawindow">
+        </div>
+    </div>
+    
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+    <script src="charts/topojson.v3.js"></script>
+    <script src=".\d3.v6.min.js"></script>
+    <script type="module" src="main.js"></script>
+    <script src="scatterplotdatawindow.js"></script>
+    <script src="./charts/choropleth.js"></script>
+
+</body>
+</html>

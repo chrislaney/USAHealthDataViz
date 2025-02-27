@@ -1,0 +1,176 @@
+/* Reset default margin */
+body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Main container that holds both sections */
+#container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Left section (60% width) */
+#choroplethparent {
+    width: 50%;
+    border: 1px solid black;
+    display:flex;
+    flex-direction: column;
+}
+
+#metricselector{
+    height: 20%;
+    display: flex;
+}
+
+
+#choroplethchart{
+    height: 80%;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Right section (40% width), split into two halves */
+#center {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+#scatterplot{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    /* width: 100%;
+    height: 100%; */
+}
+
+#scatterplotplot{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+
+
+#barchart{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+#barchartchart{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+#datawindow{
+    width: 15%;
+}
+
+
+/* Each right section takes up 50% of height */
+.center-section {
+    flex: 1; /* Equal height split */
+    border: 1px solid black;
+}
+
+/* Ensure SVGs take up full space */
+svg {
+    width: 100%;
+    height: 100%;
+}
+
+#state-borders {
+    fill: none;
+    stroke: #fff;
+}
+
+
+
+
+
+.background {
+    fill: none;
+    pointer-events: all;
+}
+
+#states {
+    fill: #aaa;
+}
+
+#states .active {
+    display:none;
+}
+
+#state-borders {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 1.5px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    pointer-events: none;
+}
+
+.county-boundary {
+    fill: gray;
+    stroke: #fff;
+    stroke-width: .5px;
+}
+
+.county-boundary:hover, .state:hover {
+    fill: orange;
+}
+
+#tooltip {
+    position: absolute;
+    display: none;
+    background: #fff;
+    box-shadow: 3px 3px 3px 0px rgb(92 92 92 / 0.5);
+    border: 1px solid #ddd;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px;
+    min-width: 160px;
+    color: #333;
+}
+.tooltip-title {
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.metric-btn {
+
+}
+
+.metric-btn:hover {
+    background: rgb(182, 182, 182);
+}
+
+.metric-btn:active {
+    background: rgb(182, 182, 182);
+    transform: scale(0.98); /* Press effect */
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+.metric-btn.selected { /* New style for selected button */
+    background: rgb(41, 40, 40); /* Keep background dark when selected */
+}
+
