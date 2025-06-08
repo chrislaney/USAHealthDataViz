@@ -7,8 +7,8 @@ The motivation for this application was to help users better understand how inco
 
 ## Design Sketching and Data Selection
 
-<img src=".\IMG_3745.JPEG" style="max-width: 300px; max-height: 400px;">
-<img src=".\IMG_3746.JPEG" style="max-width: 300px; max-height: 400px;">
+<img src=".\readmeassets\IMG_3745.JPEG" style="max-width: 300px; max-height: 400px;">
+<img src=".\readmeassets\IMG_3746.JPEG" style="max-width: 300px; max-height: 400px;">
 
 These were my original design sketches after reading the requirements briefly, As I started to build my first plot (the scatter) I changed the way I wanted things to look and sort of planned around there being some interactivity. 
 
