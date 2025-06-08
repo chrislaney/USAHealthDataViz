@@ -14,7 +14,7 @@ These were my original design sketches after reading the requirements briefly, A
 
 I think its worth it to note that during the selection process of what data I used I relied heavily on descriptive statistics and a correlation heatmap of which attributes were heavily correlated. This allowed me to actually pick some attributes that could tell a story.
 
-![heatmap](./heatmap.png)
+![heatmap](./readmeassets/heatmap.png)
 
 I settled on income and the group of morbidities listed because there was a large correlation there and thought it might be more interesting to explore vs something with no correlation. I originally wanted to do how park access affects those morbities but there was not enough correlation for my liking. 
 
