@@ -20,14 +20,14 @@ I settled on income and the group of morbidities listed because there was a larg
 
 ## User Interface Design
 
-![ui1](./ui1.png)
+![ui1](./readmeassets/ui1.png)
 
 The user interface is very simple and straightforward. There are 5 buttons at the top used to toggle between views of the different morbidities and then also median household income. Upon selecting a button the graphs will be redrawn with whatever morbidity a user selects.
 
 ### Scatter Plot 
 The top right contains a scatter plot with a static x axis of median income, and then the y axis varys with whatever morbidity is currently selected. The graph also has a tool tip capability where upon hover of a point it will show the County name, median income level, and morbidity percentage. 
 
-![ui2](./ui2.png)
+![ui2](./readmeassets/ui2.png)
 
 ### Bar Chart
 The bottom right contains a bar chart, this is used to give distributions of a single attribute and see where the most counties lie
@@ -39,7 +39,7 @@ The left side contains the choropleth which shows state and county borders. They
 ## Findings
 All of the morbidities listed have some sort of negative correlation with income, with stroke being the strongest, and high cholesterol being the weakest. Stroke and high blood pressure are highest in the deep south which also happens to be where household income is the lowest. When average household income rises above about 60k there appears to be a large plateau, the curve is sharpest in the 30k-60k region for stroke, coronary heart disease, and high blood pressure. The entirety of the US appears to have too high of cholesterol and it seemingly knows no fiscal bounds. 
 
-![ui5](./ui5.png)
+![ui5](./readmeassets/ui5.png)
 
 ## Process
 
